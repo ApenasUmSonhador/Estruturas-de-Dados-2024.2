@@ -38,4 +38,6 @@ class Converter:
                 result += chr(55 + top_element)
         
         # Retorna o resultado final da conversão
+        if result == "":
+            result = "0"
         return result
