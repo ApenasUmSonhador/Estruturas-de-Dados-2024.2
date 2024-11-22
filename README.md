@@ -56,7 +56,7 @@ ED-2024.2/
 
 ```bash
    git clone <url-do-repositorio>
-   cd ED-2024.2/Trabalho_1
+   cd Estruturas-de-Dados-2024.2/Trabalho_1
 ```
 
 ---
