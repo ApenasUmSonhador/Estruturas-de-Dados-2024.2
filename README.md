@@ -14,7 +14,7 @@ ED-2024.2/
 │   ├── setup_init_paths.py        # Arquivo que configura paths para __init__.py
 │   ├── Tests/                     # Pasta com testes automatizados 
 │   │   ├── setup_paths.py         # Arquivo que configura paths para os testes
-│   │   ├── test_calculator.py          # Testes relacionados à calculadora
+│   │   ├── test_calculator.py     # Testes relacionados à calculadora
 │   │   ├── test_stack.py          # Testes relacionados à estrutura de pilha
 │   │   ├── test_converter.py      # Testes relacionados ao módulo de conversão
 │   └── Classes/                   # Pasta com as implementações principais
