@@ -10,60 +10,96 @@ def test_converter():
 
     print("Test 1")
     c1 = Converter(13)
-    print("Result:", c1.to_binary())
+    result = c1.to_binary()
+    print("Result:", result)
     print("Expected: 1101")
-    is_correct = is_correct and c1.to_binary() == "1101"
+    is_correct = is_correct and result == "1101"
 
     print("Test 2")
     c2 = Converter(255)
-    print("Result:", c2.to_binary())
+    result = c2.to_binary()
+    print("Result:", result)
     print("Expected: 11111111")
-    is_correct = is_correct and c2.to_binary() == "11111111"
+    is_correct = is_correct and result == "11111111"
 
     print("Test 3")
     c3 = Converter(0)
-    print("Result:", c3.to_binary())
+    result = c3.to_binary()
+    print("Result:", result)
     print("Expected: 0")
-    is_correct = is_correct and c3.to_binary() == "0"
+    is_correct = is_correct and result == "0"
 
     print("\nOctal")
     print("Test 1")
     c1 = Converter(13)
-    print("Result:", c1.to_octal())
+    result = c1.to_octal()
+    print("Result:", result)
     print("Expected: 15")
-    is_correct = is_correct and c1.to_octal() == "15"
+    is_correct = is_correct and result == "15"
 
     print("Test 2")
     c2 = Converter(255)
-    print("Result:", c2.to_octal())
+    result = c2.to_octal()
+    print("Result:", result)
     print("Expected: 377")
-    is_correct = is_correct and c2.to_octal() == "377"
+    is_correct = is_correct and result == "377"
 
     print("Test 3")
     c3 = Converter(0)
-    print("Result:", c3.to_octal())
+    result = c3.to_octal()
+    print("Result:", result)
     print("Expected: 0")
-    is_correct = is_correct and c3.to_octal() == "0"
+    is_correct = is_correct and result == "0"
 
     print("\nHexadecimal")
     print("Test 1")
     c1 = Converter(13)
-    print("Result:", c1.to_hexadecimal())
+    result = c1.to_hexadecimal()
+    print("Result:", result)
     print("Expected: D")
-    is_correct = is_correct and c1.to_hexadecimal() == "D"
+    is_correct = is_correct and result == "D"
 
     print("Test 2")
     c2 = Converter(255)
-    print("Result:", c2.to_hexadecimal())
+    result = c2.to_hexadecimal()
+    print("Result:", result)
     print("Expected: FF")
-    is_correct = is_correct and c2.to_hexadecimal() == "FF"
+    is_correct = is_correct and result == "FF"
 
     print("Test 3")
     c3 = Converter(0)
-    print("Result:", c3.to_hexadecimal())
+    result = c3.to_hexadecimal()
+    print("Result:", result)
     print("Expected: 0")
-    is_correct = is_correct and c3.to_hexadecimal() == "0"
+    is_correct = is_correct and result == "0"
 
+    print("\nAny base")
+    print("Test 1")
+    c1 = Converter(13)
+    result = c1.convert(10)
+    print("Result:", result)
+    print("Expected: 13")
+    is_correct = is_correct and result == "13"
+
+    print("Test 2")
+    c2 = Converter(255)
+    result = c2.convert(29)
+    print("Result:", result)
+    print("Expected: 8N")
+    is_correct = is_correct and result == "8N"
+
+    print("Test 3")
+    c3 = Converter(0)
+    result = c3.convert(7)
+    print("Result:", result)
+    print("Expected: 0")
+    is_correct = is_correct and result == "0"
+
+    print()
+    if is_correct:
+        print("All tests passed")
+    else:
+        print("Some tests failed")
     return is_correct
-
+    print("--------------------")
 test_converter()

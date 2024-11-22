@@ -57,6 +57,12 @@ def test_calculator():
     print("Expected: ", expected)
     is_correct = is_correct and result == expected
 
+    print()
+    if is_correct:
+        print("All tests passed")
+    else:
+        print("Some tests failed")
     return is_correct
+    print("--------------------")
 
 test_calculator()
