@@ -113,16 +113,13 @@ class Stack:
         # Se os ponteiros se cruzarem, a string é um palíndromo
         return True
 
-    def odd_and_evens(self, number_list):  # O(n)
-        # Adiciono todos os números na pilha
-        for number in number_list:
-            self.push(number)
+    def odds_and_evens(self):  # O(n)
         # Crio duas pilhas para armazenar os números pares e ímpares
         odd_stack = Stack(self.capacity)
         even_stack = Stack(self.capacity)
 
         # Vou removendo os elementos da pilha original e adicionando nas pilhas de pares e ímpares
-        for _ in range(self.top_index + 1, self.top_index - len(number_list) + 1, -1):
+        for _ in range(self.top_index + 1, 0, -1):
             top_element = self.pop()
             if top_element % 2 == 0:
                 even_stack.push(top_element)

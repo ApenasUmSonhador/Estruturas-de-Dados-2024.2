@@ -41,7 +41,7 @@ class Calculator:
             if char.isalpha() and char not in self.values:
                 raise ValueError(f"Invalid variable in expression: {char}")
 
-    def precedence(self, op):  # O(1)
+    def priority(self, op):  # O(1)
         # Define a precedência dos operadores
         if op in ('+', '-'):
             return 1
@@ -53,24 +53,27 @@ class Calculator:
 
     def infix_to_postfix(self):  # O(n)
         # Converte a expressão infixa para pós-fixa
-        stack = Stack()
-        result = []
+        stack, result = Stack(), []
         for char in self.expression:
             if char.isalpha():
+                # Adiciona a variável ao resultado
                 result.append(char)
             elif char == '(':
                 stack.push(char)
             elif char == ')':
                 while not stack.is_empty() and stack.get_top() != '(':
+                    # Desempilha até encontrar o parêntese de abertura
                     result.append(stack.pop())
-                stack.pop()  # Remove o '(' da pilha
+                stack.pop()
             else:
-                while not stack.is_empty() and self.precedence(char) <= self.precedence(stack.get_top()):
+                while not stack.is_empty() and self.priority(char) <= self.priority(stack.get_top()): 
                     result.append(stack.pop())
                 stack.push(char)
-        # Desempilha os operadores restantes
+
+        # Desempilha os operadores restantes na pilha
         while not stack.is_empty():
-            result.append(stack.pop())
+            result.append(stack.pop())  # Adiciona os operadores restantes ao resultado
+        stack.free()
         return ''.join(result)
 
     def calculate(self):  # O(n)
@@ -82,9 +85,11 @@ class Calculator:
 
         for char in self.expression:
             if char.isalpha():
+                # Se o char for uma variável, empilha o valor correspondente
                 stack.push(self.values[char])
             else:
+                # Se o char for um operador calcula e empilha
                 val2 = stack.pop()
                 val1 = stack.pop()
                 stack.push(self.OP[char](val1, val2))
-        return stack.pop()
+        return stack.get_top()
