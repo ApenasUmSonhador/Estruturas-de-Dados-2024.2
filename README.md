@@ -14,9 +14,11 @@ ED-2024.2/
 │   ├── setup_init_paths.py        # Arquivo que configura paths para __init__.py
 │   ├── Tests/                     # Pasta com testes automatizados 
 │   │   ├── setup_paths.py         # Arquivo que configura paths para os testes
+│   │   ├── test_calculator.py          # Testes relacionados à calculadora
 │   │   ├── test_stack.py          # Testes relacionados à estrutura de pilha
 │   │   ├── test_converter.py      # Testes relacionados ao módulo de conversão
 │   └── Classes/                   # Pasta com as implementações principais
+│       ├── Calculator.py          # Implementação da calculadora
 │       ├── Converter.py           # Implementação do módulo de conversão
 │       ├── Stack.py               # Implementação da estrutura de pilha
 
@@ -26,14 +28,20 @@ ED-2024.2/
 
 ## **Funcionalidades**
 
+- **Classes/Calculator.py**  
+  Implementa funções capazes de solucionar expressões de 10 variáveis em notação infixa e pós-fixa (RPN)
+
 - **Classes/Converter.py**  
   Implementa funções para conversão de inteiros de base 10 em diferentes bases.  
 
 - **Classes/Stack.py**  
   Implementa uma estrutura de pilha com operações básicas como `push`, `pop` e verificação de vazio.
 
+- **Tests/test_calculator.py**  
+  Contém testes automatizados para validar o comportamento correto da classe `Calculator`.
+
 - **Tests/test_stack.py**  
-  Contém testes automatizados para validar o comportamento correto da classe `Stack`.  
+  Contém testes automatizados para validar o comportamento correto da classe `Stack`.
 
 - **Tests/test_converter.py**  
   Contém testes automatizados para validar o comportamento do módulo `Converter`.  
@@ -84,6 +92,15 @@ stack.push(10)
 stack.push(20)
 print(stack.pop())  # Saída: 20
 print(stack.is_empty())  # Saída: False
+```
+
+### Operações com `Calculator`
+```python
+from Classes.Calculator import Calculator
+
+calculator = Calculator() # Entrada: Valor das variáveis, expressão e se é da forma pós-fixa
+result = caculator.calculate() 
+print(result)  # Saída: Cálculo baseado no input
 ```
 
 ---
