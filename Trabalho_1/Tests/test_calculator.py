@@ -62,7 +62,5 @@ def test_calculator():
         print("All tests passed")
     else:
         print("Some tests failed")
-    return is_correct
     print("--------------------")
-
-test_calculator()
+    return is_correct

@@ -107,8 +107,6 @@ def test_stack():
     is_correct = is_correct and result is True
     s4.free() # Sonha que a memória foi liberada
 
-    print("--------------------")
-
     print("\nIs Palindrome")
     print("Test 1")
     s5 = Stack()
@@ -179,6 +177,7 @@ def test_stack():
         print("All tests passed")
     else:
         print("Some tests failed")
+    print("--------------------")
     return is_correct
 
 test_stack()

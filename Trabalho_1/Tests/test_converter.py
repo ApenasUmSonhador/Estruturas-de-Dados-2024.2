@@ -100,6 +100,5 @@ def test_converter():
         print("All tests passed")
     else:
         print("Some tests failed")
-    return is_correct
     print("--------------------")
-test_converter()
+    return is_correct
