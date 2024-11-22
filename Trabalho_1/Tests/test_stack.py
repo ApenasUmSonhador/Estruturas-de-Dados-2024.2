@@ -179,5 +179,3 @@ def test_stack():
         print("Some tests failed")
     print("--------------------")
     return is_correct
-
-test_stack()
