@@ -9,11 +9,11 @@ Este projeto é uma implementação de algoritmos e estruturas de dados desenvol
 A estrutura do projeto segue a seguinte organização:
 ```yaml
 ED-2024.2/
-├── Trabalho_1/
+├── Questões_1_a_5/                # Pasta com questões 1, 3 e 5
 │   ├── __init__.py                # Arquivo principal que executa os testes
-│   ├── setup_init_paths.py        # Arquivo que configura paths para __init__.py
+│   ├── setup_init_paths.py        # Configurador de paths para __init__.py
 │   ├── Tests/                     # Pasta com testes automatizados 
-│   │   ├── setup_paths.py         # Arquivo que configura paths para os testes
+│   │   ├── setup_paths.py         # Configurador de paths para os testes
 │   │   ├── test_calculator.py     # Testes relacionados à calculadora
 │   │   ├── test_stack.py          # Testes relacionados à estrutura de pilha
 │   │   ├── test_converter.py      # Testes relacionados ao módulo de conversão
@@ -21,12 +21,14 @@ ED-2024.2/
 │       ├── Calculator.py          # Implementação da calculadora
 │       ├── Converter.py           # Implementação do módulo de conversão
 │       ├── Stack.py               # Implementação da estrutura de pilha
+├── Questão_7.ipynb                # Resolução da questão 7
+├── Questão_9.ipynb                # Resolução da questão 7
 
 ```
 
 ---
 
-## **Funcionalidades**
+## **Funcionalidades em Questões_1_a_5**
 
 - **Classes/Calculator.py**  
   Implementa funções capazes de solucionar expressões de 10 variáveis em notação infixa e pós-fixa (RPN)
@@ -56,14 +58,14 @@ ED-2024.2/
 
 ```bash
    git clone <url-do-repositorio>
-   cd Estruturas-de-Dados-2024.2/Trabalho_1
+   cd Estruturas-de-Dados-2024.2/Questões_1_a_5
 ```
 
 ---
 
-## **Como executar**
+## **Como executar Questões_1_a_5**
 ### Rodar os testes
-Para executar os testes automatizados diretamente, rode o seguinte comando na pasta Trabalho_1:
+Para executar os testes automatizados diretamente, rode o seguinte comando na pasta Questões_1_a_5:
 
 ```bash
 python __init__.py
@@ -107,6 +109,16 @@ print(result)  # Saída: Cálculo baseado no input
 
 ## **Licença**
 Este projeto está licenciado sob a licença MIT. Consulte o arquivo `LICENSE` para mais informações.
+
+---
+
+## **Colaboradores**
+Trabalho de Estrutura de Dados com os devidos créditos para:
+- [Arthur Vinicius Carneiro Nunes](https://github.com/ApenasUmSonhador) - Questões 1, 3 e 5
+- [Caio Passos De Lima Albuquerque](https://github.com/CaioPassos3) - Questão 9
+- Gleidistony Mendes Martins - Questão 7
+- [Mateus Santos Araújo](https://github.com/Matheus-Santos-Araujo) - Professor da disciplina
+
 
 ---
 
