@@ -2,6 +2,98 @@ from setup_paths import setup
 setup()  # Configura o caminho para acessar as classes
 
 from Converter import Converter
+import time
+def test_converter_performance():
+    print("--------------------")
+    print("Test Converter Performance")
+
+    print("\nBinary Conversion")
+    print("Test 1")
+    c = Converter(1)
+    time_start = time.time()
+    result = c.to_binary()
+    time_end = time.time()
+    print("Time:", time_end - time_start)
+
+    print(result)
+
+
+    print("Test 1000000")
+    c = Converter(1000000)
+    time_start = time.time()
+    result = c.to_binary()
+    time_end = time.time()
+    print("Time:", time_end - time_start)
+
+    print(result)
+
+    print("Test 1000000000")
+    c = Converter(1000000000)
+    time_start = time.time()
+    result = c.to_binary()
+    time_end = time.time()
+    print("Time:", time_end - time_start)
+
+    print(result)
+
+    print("\nOctal Conversion")
+    print("Test 1")
+    c1 = Converter(1)
+    time_start = time.time()
+    c1.to_octal()
+    time_end = time.time()
+    print("Time:", time_end - time_start)
+
+    print(result)
+
+    print("Test 1000000")
+    c = Converter(1000000)
+    time_start = time.time()
+    result = c.to_octal()
+    time_end = time.time()
+    print("Time:", time_end - time_start)
+
+    print(result)
+
+    print("Test 1000000000")
+    c = Converter(1000000000)
+    time_start = time.time()
+    result = c.to_octal()
+    time_end = time.time()
+    print("Time:", time_end - time_start)
+
+    print(result)
+
+    print("\nHexadecimal Conversion")
+    print("Test 1")
+    c1 = Converter(1)
+    time_start = time.time()
+    c1.to_hexadecimal()
+    time_end = time.time()
+    print("Time:", time_end - time_start)
+
+    print(result)
+
+    print("Test 1000000")
+    c = Converter(1000000)
+    time_start = time.time()
+    result = c.to_hexadecimal()
+    time_end = time.time()
+    print("Time:", time_end - time_start)
+
+    print(result)
+
+    print("Test 1000000000")
+    c = Converter(1000000000)
+    time_start = time.time()
+    result = c.to_hexadecimal()
+    time_end = time.time()
+    print("Time:", time_end - time_start)
+
+    print(result)
+
+    print("--------------------")
+
 def test_converter():
     is_correct = True
     print("--------------------")

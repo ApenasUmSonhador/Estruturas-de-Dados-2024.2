@@ -3,6 +3,174 @@ setup()  # Configura o caminho para acessar as classes
 
 from Stack import Stack
 
+import time
+
+def test_stack_performance():
+    print("--------------------")
+    print("Test Stack Performance")
+
+    print("\nPush")
+    print("Test 1")
+    s1 = Stack()
+    time.start = time.time()
+    s1.push(1)
+    time.end = time.time()
+    print("Time:", time.end - time.start)
+
+    print("Test 1000")
+    s2 = Stack(1000)
+    time.start = time.time()
+    for i in range(1000):
+        s2.push(i)
+    time.end = time.time()
+    print("Time:", time.end - time.start)
+
+    print("Test 1000000")
+    s3 = Stack(1000000)
+    time.start = time.time()
+    for i in range(1000000):
+        s3.push(i)
+    time.end = time.time()
+    print("Time:", time.end - time.start)
+    
+    print("\nPop")
+    print("Test 1")
+    time.start = time.time()
+    s1.pop()
+    time.end = time.time()
+    print("Time:", time.end - time.start)
+
+    print("Test 1000")
+    time.start = time.time()
+    for i in range(1000):
+        s2.pop()
+    time.end = time.time()
+    print("Time:", time.end - time.start)
+
+    print("Test 1000000")
+    time.start = time.time()
+    for i in range(1000000):
+        s3.pop()
+    time.end = time.time()
+    print("Time:", time.end - time.start)
+
+    s1.free(); s2.free(); s3.free() # Sonha que a memória foi liberada
+
+    print("\nGet Top")
+    s = Stack()
+    s.push(1)
+    time.start = time.time()
+    s.get_top()
+    time.end = time.time()
+    print("Time:", time.end - time.start)
+
+    print("\nIs Empty")
+    print("False")
+    time.start = time.time()
+    s.is_empty()
+    time.end = time.time()
+    print("Time:", time.end - time.start)
+
+    print("False")
+    s.pop()
+    time.start = time.time()
+    s.is_empty()
+    time.end = time.time()
+    print("Time:", time.end - time.start)
+
+    print("\nIs Full")
+    print("False")
+    time.start = time.time()
+    s.is_full()
+    time.end = time.time()
+    print("Time:", time.end - time.start)
+
+    s.free() # Sonha que a memória foi liberada
+
+    print("True")
+    s = Stack(1)
+    s.push(1)
+    time.start = time.time()
+    s.is_full()
+    time.end = time.time()
+    print("Time:", time.end - time.start)
+
+    s.free() # Sonha que a memória foi liberada
+
+    print("\nDelete")
+    print("Test 1")
+    s = Stack()
+    s.push(0)
+    time.start = time.time()
+    s.delete(0)
+    time.end = time.time()
+    print("Time:", time.end - time.start)
+    s.free() # Sonha que a memória foi liberada
+
+    print("Test 1000")
+    s = Stack(1000)
+    for i in range(1, 1001):
+        s.push(i)
+    time.start = time.time()
+    s.delete(500)
+    time.end = time.time()
+    print("Time:", time.end - time.start)
+    s.free() # Sonha que a memória foi liberada
+
+
+    print("Test 1000000")
+    s = Stack(1000000)
+    for i in range(1, 1000001):
+        s.push(i)
+    time.start = time.time()
+    s.delete(500000)
+    time.end = time.time()
+    print("Time:", time.end - time.start)
+    s.free() # Sonha que a memória foi liberada
+
+    print("\nIs Palindrome")
+    print("True")
+    s = Stack()
+    time.start = time.time()
+    s.is_palindrome("ararararara")
+    time.end = time.time()
+    print("Time:", time.end - time.start)
+
+    print("False")
+    time.start = time.time()
+    s.is_palindrome("palindrome")
+    time.end = time.time()
+    print("Time:", time.end - time.start)
+    s.free() # Sonha que a memória foi liberada
+
+    print("\nIs Palindrome Pointers")
+    print("True")
+    s = Stack()
+    time.start = time.time()
+    s.is_palindrome_pointers("ararararara")
+    time.end = time.time()
+    print("Time:", time.end - time.start)
+
+    print("False")
+    time.start = time.time()
+    s.is_palindrome_pointers("palindrome")
+    time.end = time.time()
+    print("Time:", time.end - time.start)
+    s.free() # Sonha que a memória foi liberada
+
+    print("\nOdds and Evens")
+    s = Stack()
+    for i in range(1, 11):
+        s.push(i)
+    print("Test 1")
+    time.start = time.time()
+    s.odds_and_evens()
+    time.end = time.time()
+    print("Time:", time.end - time.start)
+    s.free() # Sonha que a memória foi liberada
+
+    print("--------------------")
+
 def test_stack():
     is_correct = True
     print("--------------------")
