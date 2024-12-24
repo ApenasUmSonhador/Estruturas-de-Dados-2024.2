@@ -21,11 +21,11 @@ ED-2024.2/
 │       ├── Calculator.py          # Implementação da calculadora
 │       ├── Converter.py           # Implementação do módulo de conversão
 │       ├── Stack.py               # Implementação da estrutura de pilha
+├── .gitignore                     # Arquivo para relevar caches e afins para git
+├── LICENSE                        # Licença estilo MIT sobre o projeto
 ├── Questão_7.ipynb                # Resolução da questão 7 via jupyter notebook
 ├── Questão_9.ipynb                # Resolução da questão 9 via jupyter notebook
-├── .gitignore                     # Arquivo para relevar caches e afins para git
-├── README.md                      # Documentação do projeto
-└── LICENSE                        # Licença estilo MIT sobre o projeto
+└── README.md                      # Documentação do projeto
 ```
 
 ---
