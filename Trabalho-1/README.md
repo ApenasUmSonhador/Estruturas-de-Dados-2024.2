@@ -1,9 +1,9 @@
 # Trabalho 1
 ## **Estrutura do Projeto**
 
-A estrutura do projeto segue a seguinte organização:
+A estrutura do projeto para o **Trabalho 1** segue a seguinte organização:
 ```yaml
-ED-2024.2/
+Trabalho-1/
 ├── Questões_1_a_5/                # Pasta com questões 1, 3 e 5
 │   ├── __init__.py                # Arquivo principal que executa os testes
 │   ├── setup_init_paths.py        # Configurador de paths para __init__.py
@@ -55,7 +55,7 @@ ED-2024.2/
 
 ```bash
    git clone <url-do-repositorio>
-   cd Estruturas-de-Dados-2024.2/Questões_1_a_5
+   cd Estruturas-de-Dados-2024.2/Trabalho-1/Questões_1_a_5
 ```
 
 ---
@@ -101,13 +101,10 @@ calculator = Calculator() # Entrada: Valor das variáveis, expressão e se é da
 result = caculator.calculate() 
 print(result)  # Saída: Cálculo baseado no input
 ```
-
 ---
 
-## **Licença**
-Este projeto está licenciado sob a licença MIT. Consulte o arquivo `LICENSE` para mais informações.
-
----
+### **Resumo do README**
+Este README é organizado para facilitar a compreensão do propósito do projeto, a estrutura do código, e os passos necessários para configuração e execução. Também inclui exemplos claros para ajudar novos usuários e desenvolvedores a começarem rapidamente.
 
 ## **Colaboradores**
 Trabalho de Estrutura de Dados com os devidos créditos para:
@@ -115,9 +112,3 @@ Trabalho de Estrutura de Dados com os devidos créditos para:
 - [Caio Passos De Lima Albuquerque](https://github.com/CaioPassos3) - Questão 9
 - Gleidistony Mendes Martins - Questão 7
 - [Mateus Santos Araújo](https://github.com/Matheus-Santos-Araujo) - Professor da disciplina
-
-
----
-
-### **Resumo do README**
-Este README é organizado para facilitar a compreensão do propósito do projeto, a estrutura do código, e os passos necessários para configuração e execução. Também inclui exemplos claros para ajudar novos usuários e desenvolvedores a começarem rapidamente.
