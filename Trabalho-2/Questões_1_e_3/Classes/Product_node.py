@@ -1,7 +1,7 @@
 class Product_node:
     # Construtor da classe O(1)
-    def __init__(self, id, quantity = 1):
-        self.id = id
+    def __init__(self, p_id, quantity = 1):
+        self.p_id = p_id
         self.quantity = quantity
         self.right = None
         self.left = None
