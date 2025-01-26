@@ -11,7 +11,7 @@ Este projeto é uma implementação de algoritmos e estruturas de dados desenvol
 
 ```bash
    git clone <url-do-repositorio>
-   cd Estruturas-de-Dados-2024.2/Trabalho-1/Questões_1_a_5
+   cd Estruturas-de-Dados-2024.2/
 ```
 
 ---
