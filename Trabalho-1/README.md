@@ -16,11 +16,9 @@ Trabalho-1/
 │       ├── Calculator.py          # Implementação da calculadora
 │       ├── Converter.py           # Implementação do módulo de conversão
 │       ├── Stack.py               # Implementação da estrutura de pilha
-├── .gitignore                     # Arquivo para relevar caches e afins para git
-├── LICENSE                        # Licença estilo MIT sobre o projeto
 ├── Questão_7.ipynb                # Resolução da questão 7 via jupyter notebook
 ├── Questão_9.ipynb                # Resolução da questão 9 via jupyter notebook
-└── README.md                      # Documentação do projeto
+└── README.md                      # Documentação do projeto para Trabalho 1
 ```
 
 ---
@@ -34,7 +32,7 @@ Trabalho-1/
   Implementa funções para conversão de inteiros de base 10 em diferentes bases.  
 
 - **Classes/Stack.py**  
-  Implementa uma estrutura de pilha com operações básicas como `push`, `pop` e verificação de vazio.
+  Implementa estrutura de pilha com operações básicas como `push`, `pop` e verificação de vazio.
 
 - **Tests/test_calculator.py**  
   Contém testes automatizados para validar o comportamento correto da classe `Calculator`.
@@ -54,7 +52,7 @@ Trabalho-1/
 2. Clone o repositório:
 
 ```bash
-   git clone <url-do-repositorio>
+   git clone https://github.com/ApenasUmSonhador/Estruturas-de-Dados-2024.2.git
    cd Estruturas-de-Dados-2024.2/Trabalho-1/Questões_1_a_5
 ```
 
