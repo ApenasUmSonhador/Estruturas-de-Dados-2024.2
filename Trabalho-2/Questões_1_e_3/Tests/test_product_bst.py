@@ -5,7 +5,7 @@ import time
 from Product_bst import Product_bst
 from Product_node import Product_node
 
-def test_bst_performance():
+def test_product_bst():
     print("--------------------")
     print("Test Product BST Performance")
 

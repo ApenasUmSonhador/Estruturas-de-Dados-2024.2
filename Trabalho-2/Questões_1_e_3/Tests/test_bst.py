@@ -9,7 +9,7 @@ from Node import Node
 def generate_values(n):
     return [random.randint(1, 1000000) for _ in range(n)]
 
-def test_bst_performance():
+def test_bst():
     sizes = [100, 1000, 10000, 100000, 1000000]
     for size in sizes:
         values = generate_values(size)

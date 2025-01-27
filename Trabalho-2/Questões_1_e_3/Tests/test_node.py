@@ -2,7 +2,7 @@ from setup_paths import setup
 setup()  # Configura o caminho para acessar as classes
 from Node import Node
 import time
-def test_node_performance():
+def test_node():
     print("--------------------")
     print("Test Node Performance")
 
