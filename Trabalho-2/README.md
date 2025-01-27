@@ -31,13 +31,13 @@ Trabalho-2/
   Implementa estrutura de dados **árvore binária de busca** para atender às especificidades da questão 1
 
 - **Classes/Node.py**  
-  Implementa estrutura **nó** com filho `left`, `right` e `value`
+  Implementa estrutura **nó** com `left`, `right` e `value`
 
 - **Classes/Product_bst.py**  
   Implementa estrutura de dados **árvore binária de busca modificada** para atender às especificidades da questão 3
   
 - **Classes/Product_node.py**  
-  Implementa estrutura de dados **nó modificado** com filho `left`, `right`, `id` e `quantity`
+  Implementa estrutura de dados **nó modificado** com `left`, `right`, `id` e `quantity`
 
   
 - **Tests/Bst.py**  
