@@ -8,4 +8,4 @@ class Product_node:
 
     # Método para representação em string O(1)
     def __str__(self):
-        return str(self.data)
+        return f"p_id: {self.p_id}, quantity: {self.quantity}"
