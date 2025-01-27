@@ -7,4 +7,4 @@ class Node:
 
     # Método para representação em string O(1)
     def __str__(self):
-        return str(self.data)
+        return str(self.value)
