@@ -18,6 +18,7 @@ Trabalho-2/
 │       ├── Node.py                # Implementação da estrutura de nó
 │       ├── Product_bst.py         # Implementação do estrutura de árvore binária de busca modificada
 │       ├── Product_node.py        # Implementação da estrutura de nó modificado
+├── Questão_5.ipynb                # Resolução da questão 5 via jupyter notebook
 ├── Questão_7.ipynb                # Resolução da questão 7 via jupyter notebook
 ├── Questão_9.ipynb                # Resolução da questão 9 via jupyter notebook
 └── README.md                      # Documentação do projeto para Trabalho 2
